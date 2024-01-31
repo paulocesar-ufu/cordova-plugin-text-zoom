@@ -7,7 +7,6 @@
       "access": "public"
     },
     "scripts": {
-      "version": "NODE_ENV=production npm run-script build",
       "prepack": "ejs --output-file plugin.xml plugin.xml.ejs version=$npm_package_version",
       "postversion": "git push && git push --tags",
       "publish-dev": "npm publish --tag dev"
