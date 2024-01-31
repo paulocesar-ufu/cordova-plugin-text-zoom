@@ -1,34 +1,34 @@
 {
     "name": "@totalpave/cordova-plugin-text-zoom",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Provides a Text Zoom override on the Android webview",
     "publishConfig": {
-      "registry": "https://registry.npmjs.org",
-      "access": "public"
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
     },
     "scripts": {
-      "prepack": "ejs --output-file plugin.xml plugin.xml.ejs version=$npm_package_version",
-      "postversion": "git push && git push --tags",
-      "publish-dev": "npm publish --tag dev"
+        "prepack": "ejs --output-file plugin.xml plugin.xml.ejs version=$npm_package_version",
+        "postversion": "git push && git push --tags",
+        "publish-dev": "npm publish --tag dev"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/totalpaveinc/cordova-plugin-text-zoom.git"
+        "type": "git",
+        "url": "git+https://github.com/totalpaveinc/cordova-plugin-text-zoom.git"
     },
     "author": "norman.breau@totalpave.com",
     "license": "Apache 2.0",
     "bugs": {
-      "url": "https://github.com/totalpaveinc/cordova-plugin-text-zoom/issues"
+        "url": "https://github.com/totalpaveinc/cordova-plugin-text-zoom/issues"
     },
     "homepage": "https://github.com/totalpaveinc/cordova-plugin-text-zoom#readme",
     "devDependencies": {
-      "ejs": "3.1.9"
+        "ejs": "3.1.9"
     },
     "engines": {
-      "cordovaDependencies": {
-        "0.0.0": {
-          "cordova-android": ">= 11"
+        "cordovaDependencies": {
+            "0.0.0": {
+                "cordova-android": ">= 11"
+            }
         }
-      }
     }
 }
