@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/totalpaveinc/cordova-plugin-text-zoom#readme",
     "devDependencies": {
-        "ejs": "3.1.9"
+        "ejs": "3.1.10"
     },
     "engines": {
         "cordovaDependencies": {
