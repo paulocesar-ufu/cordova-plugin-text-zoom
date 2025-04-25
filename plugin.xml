@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="@totalpave/cordova-plugin-text-zoom" version="<%= version %>">
+  <name>Text Zoom</name>
+  <description>Provides a Text Zoom override on the Android webview</description>
+  <author>Total Pave Inc.</author>
+  <license>Apache-2.0</license>
+  <keywords>cordova,cordova-android</keywords>
+  <repo>https://github.com/totalpaveinc/cordova-plugin-text-zoom</repo>
+
+  <platform name="android">
+    <config-file target="config.xml" parent="/*">
+      <feature name="TPTextZoom">
+        <param name="android-package" value="com.totalpave.cordova.textzoom.TextZoomPlugin" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <preference name="tp-text-zoom" default="auto" />
+    
+    <source-file src="src/android/com/totalpave/cordova/textzoom/TextZoomPlugin.java" target-dir="src/com/totalpave/cordova/textzoom" />
+  </platform>
+</plugin>
